@@ -1,0 +1,128 @@
+{
+    "PageTextData":[
+        {
+            "title": "Coca Cola Great Britain",
+			"subTitle": "Founded by Dr John S Pemberton",		
+			"description": "The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands."
+        },{
+        
+            "title":"History of Coca Cola",
+            "subTitle": "New York Harbour, 1886",
+            "description": "It was 1886,John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done,the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special."
+          
+		},{
+            "title":"History of Sprite",
+            "subTitle": "West Germany, 1959",
+            "description":"First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries.Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+        },{
+            "title":"History of Pepper",
+            "subTitle":"Texas, 1885",
+            "description":"Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. The distinctive, bold taste of Dr Pepper has been popular ever since."
+        },{
+            "x3dModelTitle": "Coca Cola X3D Model",
+			"x3dCreationMethod": "This X3D model of the coke can has been created in 3ds Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online.",
+			"title": "History of Coca Cola",
+			"subTitle": "Atlanta Beginnings",		
+			"description":"It was 1886,John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done,the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special."
+        },{
+            "x3dModelTitle": "Sprite X3D Model",
+			"x3dCreationMethod": "This X3D model of the sprite bottle has been created in 3ds Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online.",
+			"title": "Sprite — Fanta Klare Zitrone",
+			"subTitle": "First introduced in 1961",		
+			"description":"First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries.Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+        },{
+            "x3dModelTitle": "Dr Pepper X3D Model",
+			"x3dCreationMethod": "This X3D model of the pepper cup has been created in 3ds Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online.",
+			"title": "Dr Pepper — Liquid Sunshine",
+			"subTitle": "23 fruit flavours",		
+			"description":"Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on.It was created by Texas pharmacist Charles Alderton in 1885."
+        },{
+            "galleryTitle": "3D Images",
+			"galleryDescription": "These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in 3ds Max 2017 with Mental Ray"
+		},
+		
+        {
+            "FindMore": "Find out more"
+        },
+        {
+            "one_logo":"1",
+            "oca_logo":"oca",
+            "Cola_logo":"Cola",
+            "Journey_logo":"Journey",
+            "Text_logo":"Refreshing the world, one story at a time"
+        },
+       
+        
+        {   
+            "Camera_Header_interaction":"Camera view",
+            "Camera_subTitle":"Camera",
+            "Front_Camera_dropdown":"Front",
+            "Back_Camera_dropdown":"Back",
+            "Left_Camera_dropdown":"Left",
+            "Right_Camera_dropdown":"Right",
+            "Top_Camera_dropdown":"Top",
+            "Bottom_Camera_dropdown":"Bottom",
+            "Default_Button":"Default",
+            "Back_Button":"Back",
+            "Left_Button":"Left",
+            "Right_Button":"Right",
+            "Off_Button":"Off",
+            "CameraSubtitle": "These buttons select a range of X3D model viewpoints,use the dropdown menu for more camera views"
+        },
+        {
+            "Animation_Header_interaction":"Animation Option",
+            "AnimationSubtitle":"These button select a range of X3D animation options",
+            "RotX_button":"RotX",
+            "RotY_button":"RotY",
+            "RotZ_button":"RotZ",
+            "Stop_button":"Stop"
+        },
+        {
+            "RenderLights_Header_interaction":"Render and Lights",
+            "Render_subtitle_dropdown":"Render",
+            "Polygon_dropdown":"Polygon",
+            "Wireframe_dropdown":"Wireframe",
+            "Vertex_dropdown":"Vertex",
+            "Lights_subtitle_dropdown":"Lights",
+            "Default_dropdown":"Default",
+            "Onmi_dropdown":"Onmi On/Off",
+            "Target_dropdown":"Target On/Off",
+            "Headlight_dropdown":"Headlight On/Off",
+            "Poly_Button":"Poly",
+            "Wire_Button":"Wire",
+            "Headlight_Buttons":"Headlight",
+            "Default_Button":"Default",
+            "RenderLightsDescription":"These button select a limited number of render and lighting options;use the dropdown menus for more options"
+        }
+        
+        
+    ],
+    "ImageURLdata":[
+        
+        {
+            "imageURLCokeRender_FirstCard":"../application/assets/images/render_images/3D_coke.png",
+            "imageURL2CokeMain_FirstCard":"../application/assets/images/mainImage/coca_cola.jpg"
+        },
+        {
+            "imageURLSpriteRender_SecondCard":"../application/assets/images/render_images/3D_sprite.png",
+            "imageURL2SpriteMain_SecondCard":"../application/assets/images/mainImage/sprite.jpg"
+        },
+        {
+            "imageURLPepperRender_ThirdCard":"../application/assets/images/render_images/3D_pepper.png",
+            "imageURL2PepperMain_ThirdCard":"../application/assets/images/mainImage/dr_pepper.jpg"
+        }
+
+    ],
+    "WebsiteURL":[
+        {
+            "FirstCard_Website":"http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola",
+            "SecondCard_Website":"http://www.coca-cola.co.uk/drinks/sprite/sprite",
+            "ThirdCard_Website":"http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+        },
+        {
+            "FirstCard3D_Website":"http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola",
+            "SecondCard3D_Website":"http://www.coca-cola.co.uk/drinks/sprite/sprite",
+            "ThirdCard3D_Website":"http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+        }
+    ]
+}

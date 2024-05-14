@@ -1,0 +1,985 @@
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/LOKICOLA.TTF);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans ;
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+body {
+    background-color: rgba(182, 231, 243, 1.0);
+}
+
+.bgImage{
+    position: relative;
+    z-index: 1;
+    padding: 0px;
+}
+.gallery-header {
+    color: white;
+}
+
+.gallery-header:hover {
+    color: green;
+    border: 1px solid transparent;
+}
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 300px;
+	
+    height: auto;
+}
+.gallery .img-thumbnail{
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 0.15rem;
+    margin: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 43%;
+    height: auto;
+}
+
+.model3D  {
+    background-color: rgb(173, 219, 236); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 200px;
+}
+
+X3D, x3d {
+    border-radius: 5px;
+    /* float: left; */
+    /* border: 1px solid rgba(255, 0, 0, 1.0); */
+    width: 100%;
+    height: 100%;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color:  #760003; /* Font color for active font */
+    background-color: #3399ff; /* Blue color for background */
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-link {
+    color: white;  
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* Added this to emulate the nav-bar link styling */
+.nav-tabs .nav-link:hover {
+    color: green;
+    border: 1px solid transparent;
+}
+
+.title>h4{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#main_3d_image {
+    background-image: url(../assets/images/mainImage/Coke_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* The div block for the main_3d_image has no vertical size, 
+    so we need a height to see the background image */
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right:15px;
+        }
+        #main_text {
+            float: left;
+            margin: 5%;
+            width: 90%;
+            display: block;
+            background-color: rgba(255,255,255,0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #main_text h2 {
+            color: rgba(0,102,153,1);
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        #main_text h3 {
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #main_text p {
+            font-size: 12px;
+            margin: 0px;
+            line-height: 1.2;
+        } 
+    
+
+.main_contents {
+    margin-top: -17px;
+    margin-bottom: 10px;
+    
+}
+
+.card {
+    border: 0px solid rgba(5, 166, 67, 0.125);
+    /* border-radius: .25rem; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(212, 212, 212, 0.355);
+    
+}
+.logo {
+    margin-top: 3px;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 35px;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 36px;
+        margin-top: 3px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+        }
+        
+        .logo h3 {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: -5px;
+        padding-top: 10px;
+        padding-left: 0px;
+        float: left;
+        }
+        
+        .logo p {
+        font-size: 7px; /* You may have to tweak this to get a good fit */
+        margin-top: 24px; /* You may have to tweak this to get a good fit */
+        margin-bottom: -7px;
+        padding-top: 12px;
+        padding-left: 3px;
+        }
+        
+    /* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+
+/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+*/
+.navbar_coca_cola {
+    background-color:#760003 ; /* Set navbar background color */
+    border-width: 0px;
+    min-height: 70px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+    color: rgb(245, 235, 235);
+ }
+    
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: green;
+}
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white;  
+}
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: green;  
+}
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #760003; /* Font color for active font */
+    background-color:grey; /* Blue color for background */
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Let's style the dropdown menu
+*/
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #b6e7f3;
+    margin-top: 20px; /* Experiment to move the dropdown menu down */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #eb0025;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #030303;
+    background-color: #e98074;
+}
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: #760003; /* Set navbar footer background color same as header */
+    height: 50px;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0px;
+    width: 30%;
+}
+.fa-twitter-square::before{
+    content: "\f081";
+        color: green;
+        font-size: 30px;
+}
+.fa-square-github:before {
+    content: "\f092"; 
+    color: yellow;
+    font-size: 30px;
+}
+
+.fa-google-plus-g:before {
+    content: "\f0d4"; 
+    color: blue;
+    font-size: 30px;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: red;
+    font-size: 30px; 
+}
+
+.camera-btns > p  {
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    font-weight: 900; 
+}
+
+@media (min-width: 576px) {
+    .model3D  {
+        background-color: rgb(173, 219, 236); 
+        border-radius: 7px;
+        border: 0px solid white;
+        padding: 2px;
+        height: 350px;
+    }
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 150px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 600%;
+        height: auto;
+    }
+    
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #257600;
+        height: 60px;
+    }
+    
+    .camera-btns {
+        /* background-color: rgba(0, 0, 255, 0.3);  */
+        border-color: black; 
+        border-style: solid;
+        border-width: 0px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    
+    .camera-btns > p  {
+        font-size: 15px;
+        color: red;
+        padding-left: 0px;
+        font-weight: 900; 
+    }
+    
+    .camera-font {
+        font-weight: 400;   
+        color: white;
+    }
+    
+    .camera-font:hover {
+        font-weight: 700;   
+        color: rgb(3, 3, 3);
+    }
+    
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 60%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    
+    .navbar-text > a {
+        font-size: 10px;
+    }
+    
+    .navbar-text > p {
+        color: rgba(51, 13, 240, 0.77);
+        font-size: 18px;
+    }
+    
+    .copyright {
+        padding-top: 20px;
+    }
+    
+    .social {
+        padding-top: 12px;
+    }
+    .logo {
+        margin-top: 3px;
+        }
+        
+        .logo h1 {
+        font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+        font-size: 35px;
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+        }
+        
+        .logo h2 {
+            font-family: cocaColaFont;
+            font-size: 36px;
+            margin-top: 8px;
+            margin-bottom: -15px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 3px;
+            float: left;
+            }
+            
+            .logo h3 {
+            font-size: 18px;
+            margin-top: 12px;
+            margin-bottom: -5px;
+            padding-top: 10px;
+            padding-left: 0px;
+            float: left;
+            }
+            
+            .logo p {
+            font-size: 7px; /* You may have to tweak this to get a good fit */
+            margin-top: 30px; /* You may have to tweak this to get a good fit */
+            margin-bottom: -7px;
+            padding-top: 12px;
+            padding-left: 3px;
+            }
+            #main_3d_image {
+                background-image: url(../assets/images/mainImage/Coke_main.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* The div block for the main_3d_image has no vertical size, 
+                so we need a height to see the background image */
+                height: 280px;
+           
+                    }
+                    #main_text {
+                        float: left;
+                        margin: 5%;
+                        width: 40%;
+                        display: block;
+                        background-color: rgba(255,255,255,0.8);
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                    #main_text h2 {
+                        color: rgba(0,102,153,1);
+                        font-size: 20px;
+                        margin-top: 0px;
+                        margin-bottom: 5px;
+                    }
+                    #main_text h3 {
+                        font-size: 15px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                    #main_text p {
+                        font-size: 12px;
+                        margin: 0px;
+                        line-height: 1.2;
+                    } 
+}   
+@media (min-width: 768px) { 
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 210px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 600%;
+        height: auto;
+    }
+    #main_3d_image {
+        background-image: url(../assets/images/mainImage/Coke_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* The div block for the main_3d_image has no vertical size, 
+        so we need a height to see the background image */
+        height: 500px;
+            }
+            #main_text {
+                opacity: 0.7;
+                float: left;
+                margin: 4.7%;
+                width: 50%;
+                height: 70%;
+                display: block;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #main_text h2 {
+                color: rgb(0, 42, 132);
+                font-size: 44px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #main_text h3 {
+                font-size: 29px;
+                color:rgb(27, 251, 202);
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #main_text p {
+                font-size: 23px;
+                margin: 0px;
+                line-height: 1.2;
+            } 
+    .navbar_coca_cola {
+        background-color: grey;
+    }
+    .footer {
+        background-color: grey;
+        height: 60px;
+    }
+    .footer > .container > .copyright > p > span{
+        color: white;
+    }
+  
+    .model3D  {
+        background-color: rgb(173, 219, 236); 
+        border-radius: 7px;
+        border: 0px solid white;
+        padding: 2px;
+        height: 350px;
+    }
+    .navbar-text > a {
+        font-size: 25px;
+    }
+    .social {
+        padding-top: 10px;
+        margin-top: -11px;
+    }
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 130%;
+        line-height: 1.2;
+       
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    .navbar_coca_cola {
+        background-color: palevioletred;
+    }
+    body{
+        background-color:rgba(255, 172, 200, 0.929) ;
+    }
+    .model3D  {
+        background-color: rgb(241, 204, 238); 
+        border-radius: 7px;
+        border: 0px solid white;
+        padding: 2px;
+        height: 390px;
+    }
+    .row{
+        padding-top: 30px;
+    }
+    .footer {
+        background-color: palevioletred;
+        height: 60px;
+    }
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 300px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 600%;
+        height: auto;
+    }
+    
+    .navbar-text > a {
+        font-size: 30px;
+    }
+    .footer > .container > .copyright {
+        margin-top: 10px;
+    }
+    .footer > .container > .copyright > p > span{
+        color: white;
+    }
+    #main_3d_image {
+        background-image: url(../assets/images/mainImage/Coke_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* The div block for the main_3d_image has no vertical size, 
+        so we need a height to see the background image */
+        height: 500px;
+            }
+            #main_text {
+                opacity: 0.7;
+                float: left;
+                margin: 4.7%;
+                width: 40%;
+                height: 62%;
+                display: block;
+                background-color: rgba(255, 188, 230, 0.838);
+                padding: 10px;
+                border-radius: 10px;
+            }
+            #main_text h2 {
+                color: rgb(0, 42, 132);
+                font-size: 44px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #main_text h3 {
+                font-size: 29px;
+                color:rgb(27, 251, 106);
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #main_text p {
+                font-size: 23px;
+                margin: 0px;
+                line-height: 1.2;
+            } 
+    .logo {
+        margin-top: 3px;
+        }
+        
+        .logo h1 {
+        font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+        font-size: 45px;
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+        }
+        
+        .logo h2 {
+            font-family: cocaColaFont;
+            font-size: 45px;
+            margin-top: 14px;
+            margin-bottom: -15px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 3px;
+            float: left;
+            }
+            
+            .logo h3 {
+            font-size: 22px;
+            margin-top: 16px;
+            margin-bottom: -5px;
+            padding-top: 10px;
+            padding-left: 0px;
+            float: left;
+            }
+            
+            .logo p {
+            font-size: 10px; /* You may have to tweak this to get a good fit */
+            margin-top: 45px; /* You may have to tweak this to get a good fit */
+            margin-bottom: -7px;
+            padding-top: 12px;
+            padding-left: 3px;
+            }
+            .social {
+                padding-top: 0px;
+                margin-top: -5px;
+            }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .navbar_coca_cola {
+        background-color: orangered;
+    }
+    .card {
+        border: 0px solid rgba(5, 166, 67, 0.125);
+        /* border-radius: .25rem; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(243, 159, 110, 0.814);
+        
+    }
+    .row{
+        padding-top: 35px;
+    }
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 370px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 500%;
+        height: auto;
+    
+
+    }
+    .footer {
+        background-color: orangered;
+        height: 60px;
+    }
+    .model3D  {
+        /* background-color: rgba(255, 255, 255, 0.2); 
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 400px; */
+        
+        background-color: rgb(250, 202, 165); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 560px;
+    }
+    body {
+        background-color: rgb(243, 213, 182);
+    }
+    #main_3d_image {
+        background-image: url(../assets/images/mainImage/Coke_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* The div block for the main_3d_image has no vertical size, 
+        so we need a height to see the background image */
+        height: 570px;
+        margin-top: 40px;
+            }
+            #main_text {
+                opacity: 0.7;
+                float: left;
+                margin: 3.7%;
+                width: 40%;
+                height: 50%;
+                display: block;
+                background-color: rgba(255,255,255,0.8);
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 120px;
+            }
+            #main_text h2 {
+                color: rgba(0,102,153,1);
+                font-size: 40px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #main_text h3 {
+                font-size: 30px;
+                color:rgba(242, 148, 76, 0.962);
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #main_text p {
+                font-size: 26px;
+                margin: 0px;
+                line-height: 1.2;
+            } 
+            .social {
+                padding-top: 0px;
+                margin-top: -5px;
+            }
+            .logo {
+                margin-top: 3px;
+                }
+                
+                .logo h1 {
+                font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+                font-size: 50px;
+                margin: 0;
+                margin-top: 7px;
+                margin-bottom: -15px;
+                float: left;
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-right: 2px;
+                }
+                
+                .logo h2 {
+                    font-family: cocaColaFont;
+                    font-size: 48px;
+                    margin-top: 17px;
+                    margin-bottom: -15px;
+                    padding-top: 0px;
+                    padding-left: 0px;
+                    padding-right: 3px;
+                    float: left;
+                    }
+                    
+                    .logo h3 {
+                    font-size: 23px;
+                    margin-top: 20px;
+                    margin-bottom: -5px;
+                    padding-top: 10px;
+                    padding-left: 0px;
+                    float: left;
+                    }
+                    
+                    .logo p {
+                    font-size: 10px; /* You may have to tweak this to get a good fit */
+                    margin-top: 48px; /* You may have to tweak this to get a good fit */
+                    margin-bottom: -7px;
+                    padding-top: 12px;
+                    padding-left: 3px;
+                    }
+            p{
+                font-size: 20px;
+            }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 175%;
+        line-height: 1.2;
+       
+    }
+    body {
+        background-color: rgb(184, 243, 182);
+    }
+    .card {
+        border: 0px solid rgba(5, 166, 67, 0.125);
+        /* border-radius: .25rem; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(17, 231, 74, 0.328);
+        
+    }
+    .model3D  {
+        /* background-color: rgba(255, 255, 255, 0.2); 
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 400px; */
+
+        background-color: rgb(173, 247, 153); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 0px solid white;
+        padding: 2px;
+        height: 630px;
+    }
+    X3D, x3d {
+        border-radius: 5px;
+        /* border: 1px solid rgba(255, 0, 0, 1.0); */
+        width: 100%;
+        height: 100%
+    }
+    .navbar_coca_cola {
+        background-color: rgba(1, 103, 77, 0.889);
+    }
+    .footer {
+        background-color:rgba(1, 103, 77, 0.889);
+        height: 60px;
+    }
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 10px;
+        margin-left: 17px;
+        width: 445px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 600%;
+        height: auto;
+    
+
+    }
+    
+    
+    #main_3d_image {
+        background-image: url(../assets/images/mainImage/Coke_main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* The div block for the main_3d_image has no vertical size, 
+        so we need a height to see the background image */
+        height: 720px;
+        /* width: auto; */
+        margin-top: 40px;
+        margin-right: 20px;
+      
+            }
+            #main_text {
+                opacity: 0.7;
+                float:left ;
+                margin: 7.0%;
+                width: 35%;
+                height: 40%;
+                display: block;
+                background-color: rgba(204, 248, 254, 0.9);
+                padding: 8.5px;
+                border-radius: 10px;
+            }
+            #main_text h2 {
+                color: rgba(0,102,153,1);
+                font-size: 50px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #main_text h3 {
+                font-size: 32px;
+                color:#e98074;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #main_text p {
+                font-size: 22px;
+                margin: 0px;
+                line-height: 1.2;
+            } 
+            .social {
+                padding-top: 0px;
+                margin-top: -5px;
+            }
+            
+            .logo {
+                margin-top: 3px;
+                }
+                
+                .logo h1 {
+                font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+                font-size: 50px;
+                margin: 0;
+                margin-top: -2px;
+                margin-bottom: -50px;
+                float: left;
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-right: 2px;
+                }
+                
+                .logo h2 {
+                    font-family: cocaColaFont;
+                    font-size: 41px;
+                    margin-top: 14px;
+                    margin-bottom: -15px;
+                    padding-top: 0px;
+                    padding-left: 0px;
+                    padding-right: 3px;
+                    float: left;
+                    }
+                    
+                    .logo h3 {
+                    font-size: 23px;
+                    margin-top: 10px;
+                    margin-bottom: -5px;
+                    padding-top: 10px;
+                    padding-left: 0px;
+                    float: left;
+                    }
+                    
+                    .logo p {
+                    font-size: 10px; /* You may have to tweak this to get a good fit */
+                    margin-top: 37px; /* You may have to tweak this to get a good fit */
+                    margin-bottom: -7px;
+                    padding-top: 12px;
+                    padding-left: 3px;
+                    }
+                    h4{
+                        margin-top: 12px;
+                        margin-left: 15px;
+                    }
+                    .footer-of-gallery>p{
+                        font-size: 18px;
+                        margin-left: 15px;
+                        margin-right: 5px;
+                        margin-top: 6px;
+                        margin-bottom: 2px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+        
+  }        
+
+p {
+	
+    font-family: OpenSans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Oswald;
+	
+}
